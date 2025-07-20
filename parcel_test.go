@@ -62,7 +62,7 @@ func TestAddGetDelete(t *testing.T) {
 	// require.Equal(t, parcel.Status, getParcel.Status)
 	// require.Equal(t, parcel.Address, getParcel.Address)
 	// require.Equal(t, parcel.CreatedAt, getParcel.CreatedAt)
-	require.Equal(t, parcelExp, getParcel)
+	require.Equal(t, parcelExp, getParcel) // fix
 	// delete
 	// удалите добавленную посылку, убедитесь в отсутствии ошибки
 	// проверьте, что посылку больше нельзя получить из БД
@@ -181,6 +181,6 @@ func TestGetByClient(t *testing.T) {
 		// require.Equal(t, getParcel.Status, parcel.Status)
 		// require.Equal(t, getParcel.Address, parcel.Address)
 		// require.Equal(t, getParcel.CreatedAt, parcel.CreatedAt)
-		require.Equal(t, getParcel, parcel)
+		require.Equal(t, getParcel, parcel) // fix
 	}
 }
